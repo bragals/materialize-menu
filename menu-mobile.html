@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="css/materialize.css">
+      <link rel="stylesheet" href="css/custom.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Menu mobile com Materialize CSS</title>
+    </head>
+
+    <body>
+
+     <nav class="blue z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo left">Logo</a>
+        <a href="#" data-activates="menu-mobile" class="button-collapse right">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>   
+
+        <ul id="menu-mobile" class="side-nav">
+          <li class="active"><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>  
+      </div>
+     </nav>
+
+     <p class="blue-text">Apenas um menu simples com sidebar para mobile</p>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+      <script>
+        // Menu mobile
+        $(".button-collapse").sideNav();
+      </script>
+    </body>
+  </html>
